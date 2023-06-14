@@ -12,5 +12,9 @@ public class App {
         // y reimprimimos su valor
         edad = 55;
         System.out.println(edad);
+
+        // podemos asignar valores aritmeticos
+        edad = 19 + 21;
+        System.out.println(edad);
     }
 }
