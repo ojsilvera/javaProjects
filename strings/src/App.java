@@ -24,5 +24,13 @@ public class App {
         String palabra = "En busqueda de trabajo xd";
         System.out.println(palabra + letra2);
 
+        // ejemplo de concatenacion
+
+        String saludo = "Hola, mi nombre es ";
+        String nombre = "Rómulo ";
+        String continuacion = "y mi edad es ";
+        int edad = 100;
+        System.out.println(saludo + nombre + continuacion + edad);
+
     }
 }
