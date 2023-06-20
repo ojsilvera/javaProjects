@@ -113,5 +113,20 @@ public class App {
                 System.out.print("| ");
             }
         }
+
+        System.out.println();
+
+        // ejercicio Multiplos de 3
+
+        System.out.println("Multiplos de un numero");
+
+        int cont = 0;
+        int numero = 9;
+
+        for (cont = 0; cont <= 100; ++cont) {
+
+            int resul = numero * cont;
+            System.out.print(resul + " , ");
+        }
     }
 }
