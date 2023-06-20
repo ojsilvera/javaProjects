@@ -49,13 +49,42 @@ public class App {
         // incrementamos el valo de la valiable para alcanzar le tope de la condicion.
         // suma los dos que son el resultado anterior y el nuevo paso.
 
-        // ciclo for.
+        // ciclo for.---------------------------------------------------------
+        // contar con ciclo for.
         int contadorF = 0;
 
         System.out.println("contar del 1 al 10 con ciclo for");
 
         for (contadorF = 0; contadorF <= 10; ++contadorF) {
             System.out.println(contadorF);
+            // nos es necesario incrementar el contador porque el for ya lo lleva implicito
         }
+
+        // sumar los numero del 1 al 10 con ciclo for
+
+        int pasoF = 0;
+        int sumaT = 0;
+
+        System.out.println("sumar los numero del 1 al 10 con ciclo for");
+
+        for (pasoF = 0; pasoF <= 10; ++pasoF) {
+            sumaT = pasoF + sumaT;
+            System.out.println(sumaT);
+            // nos es necesario incrementar el contador porque el for ya lo lleva implicito
+        }
+
+        // sumar los numero del 1 al 10 con ciclo for y solo mostrar uñtimo resultado
+
+        int pasoFT = 0;
+        int sumaTF = 0;
+
+        System.out.println("mostrar el resultado final de la suma de los enteros del 1..10");
+
+        for (pasoFT = 0; pasoFT <= 10; ++pasoFT) {
+            sumaTF = pasoFT + sumaTF;
+            // nos es necesario incrementar el contador porque el for ya lo lleva implicito
+        }
+
+        System.out.println(sumaTF);
     }
 }
