@@ -2,6 +2,9 @@ public class App {
     public static void main(String[] args) throws Exception {
         // Los ciclos en java ejemplo imprimir los numeros del 1 - 10
         int numero = 0; // inicializamos la variable
+
+        System.out.println("Contar del 1 al 10");
+
         while (numero <= 10) {
 
             System.out.println(numero);
@@ -12,8 +15,11 @@ public class App {
         }
 
         // hallar la suma de los numeros del 1 - 10 mostrando todas las sumas
+
         int contador = 0; // inicializamos la variable contador
         int suma = 0; // inicializamos la variable suma
+
+        System.out.println("muestra la suma de los numeros del 1 al 10");
 
         while (contador <= 10) {
 
@@ -26,9 +32,11 @@ public class App {
 
         }
 
-        // hallar la suma de los numeros del 1 - 10 mostrando todas las sumas
+        // hallar la suma de los numeros del 1 - 10 mostrando la suma total
         int paso = 0; // inicializamos la variable paso
         int total = 0; // inicializamos la variable suma
+
+        System.out.println("muestra la suma total de los numeros del 1 al 10");
 
         while (paso <= 10) {
 
@@ -40,5 +48,14 @@ public class App {
         System.out.println("suma Total: " + total);
         // incrementamos el valo de la valiable para alcanzar le tope de la condicion.
         // suma los dos que son el resultado anterior y el nuevo paso.
+
+        // ciclo for.
+        int contadorF = 0;
+
+        System.out.println("contar del 1 al 10 con ciclo for");
+
+        for (contadorF = 0; contadorF <= 10; ++contadorF) {
+            System.out.println(contadorF);
+        }
     }
 }
