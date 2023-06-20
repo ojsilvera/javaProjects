@@ -71,6 +71,26 @@ public class App {
         }
         System.out.println();
 
+        // ejercicio dibujar matriz con ciclos anidados
+
+        int rowTR = 0;
+        int columTR = 0;
+
+        System.out.println();
+        System.out.println("matriz triangular");
+
+        for (columTR = 0; columTR <= 10; ++columTR) {
+
+            System.out.println();
+
+            for (rowTR = 0; rowTR <= columTR; ++rowTR) {
+
+                System.out.print("* ");
+
+            }
+        }
+        System.out.println();
+
         // ejercicio de la escalera y ciclos anidados
 
         int rowE = 0;
