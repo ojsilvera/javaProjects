@@ -11,7 +11,7 @@ public class App {
             // incrementamos el valo de la valiable para alcanzar le tope de la condicion
             numero = numero + 1;
             // numero++; -> otra forma de expresar el incremento en 1 unidad del contador
-            // numero += #de incremento, numero += 1, otra manera de expresar incremento
+            // numero += # de incremento, numero += 1, otra manera de expresar incremento
         }
 
         // hallar la suma de los numeros del 1 - 10 mostrando todas las sumas
