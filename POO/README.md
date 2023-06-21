@@ -18,7 +18,8 @@ La programación orientada a objetos es un paradigma de programación.
 
 Un objeto es la representación del conjunto de atributos que definen alguna entidad o algún tipo.
 
-La representación de objetos básicamente es agrupar el conjunto de características de una entidad o de un tipo para que represente sistemáticamente su significado tanto a nivel de atributos como a nivel de acciones.
+La representación de objetos básicamente es agrupar el conjunto de características de una entidad o de un tipo para que
+represente sistemáticamente su significado tanto a nivel de atributos como a nivel de acciones.
 
 **Ejemplo:**
 
@@ -29,7 +30,7 @@ Objeto: Auto
 
 # Projecto entidad financiera Byte Bank
 
-    **Entidades**
+**Entidades**
 	
-    entidad: cuenta
-	atributos: saldo, agencia, numero, titular
+    Entidad: cuenta
+	Atributos: saldo, agencia, numero, titular
