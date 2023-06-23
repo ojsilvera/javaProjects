@@ -30,9 +30,13 @@ public class CrearCuenta {
         // a tener en cuenta java inicializa de manera autonoma las variables que no se
         // han inicializada, con 0 a los campos enteros, 0.0 a los doubles y null a
         // los strings.
+
         Cuenta miCuenta = new Cuenta();
         miCuenta.depositar(500);
         System.out.println("el saldo en cuenta es: " + miCuenta.saldo);
-        System.out.println("el titular de esta cuenta es: " + miCuenta.titular);
+
+        miCuenta.retirar(700);
+        System.out.println("el saldo en cuenta es: " + miCuenta.saldo);
+
     }
 }
