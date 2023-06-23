@@ -10,6 +10,11 @@ public class Cuenta {
     // y es accesibble solo invocandolo a traves del llamado de la entidad cuenta en
     // este caso primero
     void depositar(double valor) {
+
+        // obtiene el valor de incremento de saldo desde el cuerpo principal a traves de
+        // una variable de entrada llamada valor
+        saldo = saldo + valor;
+
     }
 
 }

@@ -31,7 +31,8 @@ public class CrearCuenta {
         // han inicializada, con 0 a los campos enteros, 0.0 a los doubles y null a
         // los strings.
         Cuenta miCuenta = new Cuenta();
-        miCuenta.saldo = 200;
         miCuenta.depositar(500);
+        System.out.println("el saldo en cuenta es: " + miCuenta.saldo);
+        System.out.println("el titular de esta cuenta es: " + miCuenta.titular);
     }
 }
