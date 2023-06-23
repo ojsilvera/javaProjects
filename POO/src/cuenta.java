@@ -13,7 +13,16 @@ public class Cuenta {
 
         // obtiene el valor de incremento de saldo desde el cuerpo principal a traves de
         // una variable de entrada llamada valor
-        saldo = saldo + valor;
+        // saldo = saldo + valor;
+
+        // al utilizar la parabla reservada this se hace referencia al objeto en el que
+        // nos encontramos
+
+        this.saldo = this.saldo + valor;
+
+        // lo anterior se traduce como:
+        // en este objeto su campo es igual a en este objeto su campo saldo mas valor
+        // que es la variable que trae el dato que entra al objeto
 
     }
 
