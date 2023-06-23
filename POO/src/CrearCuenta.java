@@ -30,6 +30,8 @@ public class CrearCuenta {
         // a tener en cuenta java inicializa de manera autonoma las variables que no se
         // han inicializada, con 0 a los campos enteros, 0.0 a los doubles y null a
         // los strings.
-
+        Cuenta miCuenta = new Cuenta();
+        miCuenta.saldo = 200;
+        miCuenta.depositar(500);
     }
 }
