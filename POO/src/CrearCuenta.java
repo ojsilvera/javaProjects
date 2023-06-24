@@ -54,6 +54,7 @@ public class CrearCuenta {
 
             System.out.println("transferencia exitosa");
             System.out.println("nuevo saldo en: " + primeraCuenta.numero + " es: " + primeraCuenta.saldo);
+            System.out.println("nuevo saldo en: " + segundaCuenta.numero + " es: " + segundaCuenta.saldo);
 
         } else {
 
