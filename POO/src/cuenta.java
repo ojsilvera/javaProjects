@@ -44,4 +44,20 @@ public class Cuenta {
 
     }
 
+    // este metodo realiza una transferencia entre cuentas
+    public boolean transferir(double valorTranferir, Cuenta cuentaDestino) {
+
+        if (valorTranferir <= this.saldo) {
+
+            this.saldo -= valorTranferir;
+            cuentaDestino.depositar(valorTranferir);
+            return true;
+
+        } else {
+
+            return false;
+
+        }
+    }
+
 }
