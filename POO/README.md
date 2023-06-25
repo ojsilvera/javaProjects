@@ -29,8 +29,22 @@ cada entidad u objeto dentro de la organizacion, tiene un dominio o alcance que 
 
 notece que en el ejemplo anterior el dominio de la entidad cuenta es todo lo que afecta a esa entidad directamente, campos como documento, telefono, genero, afectan al titular mas no a la cuenta, por lo tanto deberan ser incluidos en una nueva entidad que referencie el dominio del titular.
 
-- Cuenta: numero, saldo, sucursal, titular
-- Titular: titular, documento, telefono, genero
+- Cuenta: numero, saldo, sucursal, idtitular(FK)
+- Titular: idtitular, documento, telefono, genero
+
+La relacion entre las dos entidades se representa como un campo tipo objeto en la entidad que asi lo requiere, en el caso de la relacion cuenta - cliente, el id del propietario de la cuenta se aloja en el modelo de la cuenta como un campo mas
+
+entidad1{
+    String campo_1_1;
+    int campo_1_2;
+    double campo_1_3;
+    Objeto(nombre de la clase que se referencia) idcampo_2_1;
+}
+ecntidad2{
+    String idcampo_2_1;
+    int campo_2_2;
+    double campo_2_3;
+}
 
 **Ejemplo:**
 

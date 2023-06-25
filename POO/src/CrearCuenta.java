@@ -12,7 +12,7 @@ public class CrearCuenta {
         primeraCuenta.saldo = 1000;
         primeraCuenta.agencia = 25;
         primeraCuenta.numero = 14376817;
-        primeraCuenta.titular = "Oscar Silvera";
+        // primeraCuenta.titular = "Oscar Silvera";
 
         // para tener una segunda cuenta creamos un nuevo espacio en memoria con el
         // comando new
@@ -22,7 +22,7 @@ public class CrearCuenta {
         segundaCuenta.saldo = 10000;
         segundaCuenta.agencia = 35;
         segundaCuenta.numero = 25386877;
-        segundaCuenta.titular = "Mariluz Cardona";
+        // segundaCuenta.titular = "Mariluz Cardona";
 
         // System.out.println(primeraCuenta.titular);
         // System.out.println(segundaCuenta.titular);
