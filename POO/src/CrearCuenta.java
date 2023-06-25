@@ -45,9 +45,9 @@ public class CrearCuenta {
 
         // transfiere los dos arg requeridos por el metodo, valor a transferrir y cuenta
         // destino
+
         // para recuperar la salida que genera el metodo lo almaceno en una variable del
         // mismo tipo de la salida que el metodo va a generar
-
         boolean transferir = segundaCuenta.transferir(2500, primeraCuenta);
 
         if (transferir) {

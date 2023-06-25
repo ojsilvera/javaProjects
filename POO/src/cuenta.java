@@ -4,7 +4,6 @@ public class Cuenta {
     double saldo;
     int agencia;
     int numero;
-    String titular;
 
     // creamos un metodo al intrudcir una accion que solo ejecuta esta entidad
     // y es accesibble solo invocandolo a traves del llamado de la entidad cuenta en
@@ -36,11 +35,8 @@ public class Cuenta {
             this.saldo -= valor;
             return true;
 
-        } else {
-
-            return false;
-
         }
+        return false;
 
     }
 
@@ -58,12 +54,10 @@ public class Cuenta {
             // como la operacion se realiza genera una true de salida
             return true;
 
-        } else {
-
-            // si falla la operacion, genera un false de salida
-            return false;
-
         }
+        // si falla la operacion, genera un false de salida
+        return false;
+
     }
 
 }
