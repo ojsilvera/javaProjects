@@ -20,7 +20,7 @@ public class Cuenta {
         // al utilizar la parabla reservada this se hace referencia al objeto en el que
         // nos encontramos
 
-        this.saldo = this.saldo + valor;
+        this.saldo += valor;
 
         // lo anterior se traduce como:
         // en este objeto su campo es igual a en este objeto su campo saldo mas valor
@@ -33,7 +33,7 @@ public class Cuenta {
 
         if (this.saldo >= valor) {
 
-            this.saldo = this.saldo - valor;
+            this.saldo -= valor;
             return true;
 
         } else {
@@ -49,12 +49,18 @@ public class Cuenta {
 
         if (valorTranferir <= this.saldo) {
 
-            this.saldo -= valorTranferir;
+            // llama y ejecuta el metodo retiriar para la cuenta prigen
+            this.retirar(valorTranferir);
+
+            // llama y ejecuta el metodo depositar para la cuenta destino
             cuentaDestino.depositar(valorTranferir);
+
+            // como la operacion se realiza genera una true de salida
             return true;
 
         } else {
 
+            // si falla la operacion, genera un false de salida
             return false;
 
         }
