@@ -1,7 +1,7 @@
 //por medio de una clase declaramos la entidad
-public class Cuenta {
+class Cuenta {
     // declaramos los campos de la entidad
-    double saldo;
+    private double saldo;
     int agencia;
     int numero;
     // este campo referencia el objeto cliente en cuenta y establece la relacion que
