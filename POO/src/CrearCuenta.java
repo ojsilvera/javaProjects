@@ -9,7 +9,7 @@ public class CrearCuenta {
 
         // llamamos al objeto con su atributo para almacenar un nuevo valor
 
-        primeraCuenta.saldo = 1000;
+        primeraCuenta.depositar(1000);
         primeraCuenta.agencia = 25;
         primeraCuenta.numero = 14376817;
         // primeraCuenta.titular = "Oscar Silvera";
@@ -19,7 +19,7 @@ public class CrearCuenta {
 
         Cuenta segundaCuenta = new Cuenta();
 
-        segundaCuenta.saldo = 10000;
+        segundaCuenta.depositar(10000);
         segundaCuenta.agencia = 35;
         segundaCuenta.numero = 25386877;
         // segundaCuenta.titular = "Mariluz Cardona";
@@ -40,8 +40,8 @@ public class CrearCuenta {
 
         // transferencia
 
-        System.out.println("saldo actual 1ra cuenta: " + primeraCuenta.saldo);
-        System.out.println("saldo actual 2da cuenta: " + segundaCuenta.saldo);
+        // System.out.println("saldo actual 1ra cuenta: " + primeraCuenta.saldo);
+        // System.out.println("saldo actual 2da cuenta: " + segundaCuenta.saldo);
 
         // transfiere los dos arg requeridos por el metodo, valor a transferrir y cuenta
         // destino
@@ -53,8 +53,10 @@ public class CrearCuenta {
         if (transferir) {
 
             System.out.println("transferencia exitosa");
-            System.out.println("nuevo saldo en: " + primeraCuenta.numero + " es: " + primeraCuenta.saldo);
-            System.out.println("nuevo saldo en: " + segundaCuenta.numero + " es: " + segundaCuenta.saldo);
+            // System.out.println("nuevo saldo en: " + primeraCuenta.numero + " es: " +
+            // primeraCuenta.saldo);
+            // System.out.println("nuevo saldo en: " + segundaCuenta.numero + " es: " +
+            // segundaCuenta.saldo);
 
         } else {
 
