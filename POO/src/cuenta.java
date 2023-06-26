@@ -6,7 +6,7 @@ class Cuenta {
     private int numero;
     // este campo referencia el objeto cliente en cuenta y establece la relacion que
     // existe entre ambos
-    Cliente nombre;
+    private Cliente titular;
 
     // creamos un metodo al intrudcir una accion que solo ejecuta esta entidad
     // y es accesibble solo invocandolo a traves del llamado de la entidad cuenta en
@@ -78,6 +78,10 @@ class Cuenta {
         return numero;
     }
 
+    public Cliente getTitular() {
+        return titular;
+    }
+
     // setear se coloca por la convencion en java que nos indica si el metodo lee en
     // la clase son los metodos getter de get, los que llevan obtener.
 
@@ -88,7 +92,7 @@ class Cuenta {
             this.numero = numero;
             this.agencia = sucursal;
             this.saldo = saldo;
-            this.nombre = nombre;
+            this.titular = nombre;
 
             return true;
         }

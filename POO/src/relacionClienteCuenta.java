@@ -16,8 +16,8 @@ public class relacionClienteCuenta {
 
         // obtenemos datos del objeto cliente a traves del capo referenciado en el
         // objeto cuenta
-        System.out.println("Nombre del cliente: " + cuentaCliente.nombre.getNombre());
-        System.out.println("Documento del cliente: " + cuentaCliente.nombre.getDocumento());
+        System.out.println("Nombre del cliente: " + cuentaCliente.getTitular().getNombre());
+        System.out.println("Documento del cliente: " + cuentaCliente.getTitular().getDocumento());
         System.out.println("Saldo de la cuenta: " + cuentaCliente.getSaldo());
 
         // deposito a cuenta propia
