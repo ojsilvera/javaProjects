@@ -8,26 +8,22 @@ public class relacionClienteCuenta {
         Cuenta cuentaCliente = new Cuenta();
 
         // creando cliente
+        defaultCliente.setCliente("Oscar_Silvera", "3165656110", "6212456897");
 
-        defaultCliente.nombre = "Oscar_Silvera";
-        defaultCliente.telefono = "3165656110";
-        defaultCliente.documento = "6212456897";
-        defaultCliente.genero = "Masculino";
+        // asignando datos a la cuenta
 
-        // asignando datos a la cuenta de defaultCliente
-
-        cuentaCliente.agencia = 1;
-        cuentaCliente.numero = 14376817;
-        // cuentaCliente.saldo = 10000;
-        cuentaCliente.depositar(10000);
-        cuentaCliente.nombre = defaultCliente;
+        cuentaCliente.setCuenta(10000, defaultCliente, 1, 14376817);
 
         // obtenemos datos del objeto cliente a traves del capo referenciado en el
         // objeto cuenta
-        System.out.println(cuentaCliente.nombre.nombre);
-        System.out.println(cuentaCliente.nombre.documento);
-        System.out.println(cuentaCliente.saldo());
+        System.out.println("Nombre del cliente: " + cuentaCliente.nombre.getNombre());
+        System.out.println("Documento del cliente: " + cuentaCliente.nombre.getDocumento());
+        System.out.println("Saldo de la cuenta: " + cuentaCliente.getSaldo());
 
+        // deposito a cuenta propia
+        cuentaCliente.depositar(10000);
+
+        System.out.println("Saldo cuenta post deposito: " + cuentaCliente.getSaldo());
     }
 
 }

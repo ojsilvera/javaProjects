@@ -2,8 +2,8 @@
 class Cuenta {
     // declaramos los campos de la entidad
     private double saldo;
-    int agencia;
-    int numero;
+    private int agencia;
+    private int numero;
     // este campo referencia el objeto cliente en cuenta y establece la relacion que
     // existe entre ambos
     Cliente nombre;
@@ -63,8 +63,36 @@ class Cuenta {
 
     }
 
-    public double saldo() {
+    // obtener se coloca por la convencion en java que nos indica si el metodo
+    // escribe en la clase, son los metodos getter de get, los que llevan obtener.
+
+    public double getSaldo() {
         return this.saldo;
+    }
+
+    public int getAgencia() {
+        return agencia;
+    }
+
+    public int getNumero() {
+        return numero;
+    }
+
+    // setear se coloca por la convencion en java que nos indica si el metodo lee en
+    // la clase son los metodos getter de get, los que llevan obtener.
+
+    public boolean setCuenta(int saldo, Cliente nombre, int sucursal, int numero) {
+
+        if (saldo > 0 && sucursal > 0 && numero > 0 && nombre != null) {
+
+            this.numero = numero;
+            this.agencia = sucursal;
+            this.saldo = saldo;
+            this.nombre = nombre;
+
+            return true;
+        }
+        return false;
     }
 
 }
