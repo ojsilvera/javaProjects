@@ -63,4 +63,8 @@ class Cuenta {
 
     }
 
+    public double saldo() {
+        return this.saldo;
+    }
+
 }

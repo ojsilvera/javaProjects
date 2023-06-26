@@ -5,23 +5,25 @@ public class CrearCuenta {
         // para llamar al objeto cuenta, primero debemos instanciarla
         // TiposdeObjeto(nombre de la clase a usar) nombreObjeto = new objeto(param);
 
-        Cuenta primeraCuenta = new Cuenta();
+        // Cuenta primeraCuenta = new Cuenta();
 
-        // llamamos al objeto con su atributo para almacenar un nuevo valor
+        // llamamos al objeto con su atributo para almacenar un nuevo valor, accediendo
+        // de manera directa a las variables, metodo de actualizacion que no se
+        // recomienda
 
-        primeraCuenta.depositar(1000);
-        primeraCuenta.agencia = 25;
-        primeraCuenta.numero = 14376817;
+        // primeraCuenta.saldo = 1000;
+        // primeraCuenta.agencia = 25;
+        // primeraCuenta.numero = 14376817;
         // primeraCuenta.titular = "Oscar Silvera";
 
         // para tener una segunda cuenta creamos un nuevo espacio en memoria con el
         // comando new
 
-        Cuenta segundaCuenta = new Cuenta();
+        // Cuenta segundaCuenta = new Cuenta();
 
-        segundaCuenta.depositar(10000);
-        segundaCuenta.agencia = 35;
-        segundaCuenta.numero = 25386877;
+        // segundaCuenta.saldo= 10000;
+        // segundaCuenta.agencia = 35;
+        // segundaCuenta.numero = 25386877;
         // segundaCuenta.titular = "Mariluz Cardona";
 
         // System.out.println(primeraCuenta.titular);
@@ -31,11 +33,11 @@ public class CrearCuenta {
         // han inicializada, con 0 a los campos enteros, 0.0 a los doubles y null a
         // los strings.
 
-        Cuenta miCuenta = new Cuenta();
-        miCuenta.depositar(500);
+        // Cuenta miCuenta = new Cuenta();
+        // miCuenta.depositar(500);
         // System.out.println("el saldo en cuenta es: " + miCuenta.saldo);
 
-        miCuenta.retirar(700);
+        // miCuenta.retirar(700);
         // System.out.println("el saldo en cuenta es: " + miCuenta.saldo);
 
         // transferencia
@@ -48,21 +50,21 @@ public class CrearCuenta {
 
         // para recuperar la salida que genera el metodo lo almaceno en una variable del
         // mismo tipo de la salida que el metodo va a generar
-        boolean transferir = segundaCuenta.transferir(2500, primeraCuenta);
+        // boolean transferir = segundaCuenta.transferir(2500, primeraCuenta);
 
-        if (transferir) {
+        // if (transferir) {
 
-            System.out.println("transferencia exitosa");
-            // System.out.println("nuevo saldo en: " + primeraCuenta.numero + " es: " +
-            // primeraCuenta.saldo);
-            // System.out.println("nuevo saldo en: " + segundaCuenta.numero + " es: " +
-            // segundaCuenta.saldo);
+        // System.out.println("transferencia exitosa");
+        // System.out.println("nuevo saldo en: " + primeraCuenta.numero + " es: " +
+        // primeraCuenta.saldo);
+        // System.out.println("nuevo saldo en: " + segundaCuenta.numero + " es: " +
+        // segundaCuenta.saldo);
 
-        } else {
+        // } else {
 
-            System.out.println("transferencia no realizada");
+        // System.out.println("transferencia no realizada");
 
-        }
+        // }
 
     }
 }

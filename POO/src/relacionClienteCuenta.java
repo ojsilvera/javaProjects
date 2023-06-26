@@ -26,6 +26,7 @@ public class relacionClienteCuenta {
         // objeto cuenta
         System.out.println(cuentaCliente.nombre.nombre);
         System.out.println(cuentaCliente.nombre.documento);
+        System.out.println(cuentaCliente.saldo());
 
     }
 
