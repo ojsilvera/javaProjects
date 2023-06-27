@@ -7,7 +7,7 @@ public class Cliente {
 
     public boolean setCliente(String nombre, String documento, String telefono) {
 
-        if (nombre != null && documento != null && telefono != null) {
+        if (nombre != "" && documento != "" && telefono != "") {
 
             this.nombre = nombre;
             this.documento = documento;
