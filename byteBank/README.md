@@ -1,6 +1,6 @@
 # Projecto entidad financiera Byte Bank
 
-    **Entidades**
+    **Modelado de Entidades**
 	
     Entidad: cuenta
 	Atributos: idCuenta, idSucursal, idTitular, saldo
