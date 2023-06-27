@@ -12,7 +12,8 @@
 
     - Encapsulamiento
     - Abstracción
-    - Contexto (scope)
+    - Herencia
+    - Polimorfismos
 
 **Objeto**
 
@@ -72,6 +73,9 @@ con el siguiente metodo obtenemos el total de las cuentas creadas.
             return Cuenta.total;
 
         }
+# herencia, polimorfismo e interfaces
+
+**Herencia**
 
 **Ejemplo**
 
@@ -79,17 +83,3 @@ con el siguiente metodo obtenemos el total de las cuentas creadas.
 
     - Entidad: Auto
     - Atributos: Marca, Color, Tipo, Tamaño, Año
-
-# Projecto entidad financiera Byte Bank
-
-    **Entidades**
-	
-    Entidad: cuenta
-	Atributos: saldo, idSucursal, numero, idTitular
-
-    Entidad: Cliente
-    Atributos: sidTitular, nombre, documento,
-
-    Entidad: sucursal
-    Atributos: idSucrsal, direccion, telefono
-
