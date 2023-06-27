@@ -12,6 +12,7 @@ public class Cliente {
             this.nombre = nombre;
             this.documento = documento;
             this.telefono = telefono;
+
             return true;
 
         }

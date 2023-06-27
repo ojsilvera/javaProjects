@@ -9,9 +9,9 @@ public class relacionClienteCuenta {
 
         // creando cliente
         defaultCliente.setCliente("Oscar_Silvera", "3165656110", "6212456897");
+        System.out.println(defaultCliente.getNombre());
 
         // asignando datos a la cuenta
-
         cuentaCliente.setCuenta(10000, defaultCliente, 1, 14376817);
 
         // obtenemos datos del objeto cliente a traves del capo referenciado en el
@@ -23,7 +23,8 @@ public class relacionClienteCuenta {
         // deposito a cuenta propia
         cuentaCliente.depositar(10000);
 
-        System.out.println("Saldo cuenta post deposito: " + cuentaCliente.getSaldo());
+        // System.out.println("Saldo cuenta post deposito: " +
+        System.out.println("buevo saldo: " + cuentaCliente.getSaldo());
     }
 
 }
