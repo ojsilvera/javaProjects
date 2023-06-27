@@ -20,7 +20,7 @@ public class Empleado {
     }
 
     public Cargo getidCargo() {
-        return idcargo;
+        return idCargo;
     }
 
     public String getNombre() {
@@ -51,14 +51,14 @@ public class Empleado {
         if (idEmpleado != "" && idSucursal != null && idCargo != null && nombre != "" && telefono != ""
                 && salario != 0) {
 
-            String idEmpleado = codEmpleado;
-            Sucursal idSucursal = codSucursal;
-            Cargo idCargo = codCargo;
-            String nombre = nombreEmpleado;
-            String direccion = direccionEmpleado;
-            String telefono = telefonoEmpleado;
-            int edad = edadEmpleado;
-            double salario = salarioEmpleado;
+            this.idEmpleado = codEmpleado;
+            this.idSucursal = codSucursal;
+            this.idCargo = codCargo;
+            this.nombre = nombreEmpleado;
+            this.direccion = direccionEmpleado;
+            this.telefono = telefonoEmpleado;
+            this.edad = edadEmpleado;
+            this.salario = salarioEmpleado;
 
             return true;
 
