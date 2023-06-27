@@ -12,7 +12,10 @@
     Atributos: idSucursal, direccion, telefono
 
     Entidad: empleado
-    Atributos: idEmpleado, idSucursal, nombre, edad, cargo, direccion,. telefono
+    Atributos: idEmpleado, idSucursal, idCargo, nombre, edad, cargo, direccion,. telefono, salario
+
+    Entidad: cargo
+    Atributos: idcargo, nombre
 
 **Aciones por entidad**
 
@@ -34,5 +37,10 @@
     Entidad: empleado
     Acciones: Crear
               Consultar atributos
+
+    Entidad: cargo
+    Acciones: Crear
+              Consultar atributos
+
 
 
