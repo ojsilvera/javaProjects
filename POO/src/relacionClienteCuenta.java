@@ -27,7 +27,7 @@ public class relacionClienteCuenta {
 
         }
 
-        // validando creacion de la cuenta
+        // consultando valores de la cuenta creada
         if (cuentaCliente.getNumero() != 0) {
             // obtenemos datos del objeto cliente a traves del capo referenciado en el
             // objeto cuenta
@@ -36,7 +36,7 @@ public class relacionClienteCuenta {
             System.out.println("Saldo de la cuenta: " + cuentaCliente.getSaldo());
 
         } else {
-            System.out.println("Paametros de cuenta incompletos");
+            System.out.println("Paametros de cuenta no encontrados");
         }
 
         // deposito a cuenta propia
