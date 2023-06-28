@@ -48,8 +48,8 @@ public class Empleado {
     public boolean setCreatedEmpleado(String codEmpleado, Sucursal codSucursal, Cargo codCargo, String nombreEmpleado,
             String direccionEmpleado, String telefonoEmpleado, int edadEmpleado, double salarioEmpleado) {
 
-        if (idEmpleado != "" && idSucursal != null && idCargo != null && nombre != "" && telefono != ""
-                && salario != 0) {
+        if (codEmpleado != "" && codSucursal != null && codCargo != null && nombreEmpleado != ""
+                && telefonoEmpleado != "" && salarioEmpleado != 0) {
 
             this.idEmpleado = codEmpleado;
             this.idSucursal = codSucursal;

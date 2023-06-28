@@ -18,12 +18,13 @@ public class Cargo {
     }
 
     // crear empleado
-    public boolean setCreatedCargo(int codCargo, String nombreCargo) {
+    public boolean setCreatedCargo(int codCargo, String nombreCargo, double valorBono) {
 
         if (codCargo != 0 && nombreCargo != "") {
 
             this.idcargo = codCargo;
             this.nombre = nombreCargo;
+            this.bono = valorBono;
             return true;
 
         } else {

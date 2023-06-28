@@ -8,11 +8,11 @@
     Entidad: Cliente
     Atributos: idTitular, nombre, documento, direccion, telefono
 
-    Entidad: sucursal
-    Atributos: idSucursal, direccion, telefono
-
     Entidad: empleado
     Atributos: idEmpleado, idSucursal, idCargo, nombre, edad, direccion,. telefono, salario
+    
+    Entidad: sucursal
+    Atributos: idSucursal, direccion, telefono
 
     Entidad: cargo
     Atributos: idcargo, nombre
