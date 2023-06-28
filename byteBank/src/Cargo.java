@@ -2,7 +2,7 @@ public class Cargo {
 
     private int idcargo;
     private String nombre;
-    private double bono;
+    private double valorBono;
 
     // consultar campos del cargo
     public int getIdcargo() {
@@ -13,8 +13,8 @@ public class Cargo {
         return nombre;
     }
 
-    public double getBono() {
-        return bono;
+    public double getvalorBono() {
+        return valorBono;
     }
 
     // crear empleado
@@ -24,7 +24,7 @@ public class Cargo {
 
             this.idcargo = codCargo;
             this.nombre = nombreCargo;
-            this.bono = valorBono;
+            this.valorBono = valorBono;
             return true;
 
         } else {

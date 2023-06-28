@@ -70,9 +70,9 @@ public class Empleado {
 
     // aplicar bonificaciones por cargo
 
-    public double setBonificacionEmpleado(Cargo codCargo) {
+    public double setBonificacionEmpleado(double valorBonificacion) {
 
-        return this.salario += this.salario * codCargo.getBono();
+        return this.salario = this.salario + (this.salario * valorBonificacion);
 
     }
 

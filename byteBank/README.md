@@ -44,9 +44,25 @@
 
 **Reglas de negocio**
 
+Aumento del salario por bono segun el cargo
+
     Entidad: cargo
     Accion: Boniificar +10% funcionarios
             Boniificar +100% gerentes
+
+Solucion propuesta:
+
+    El cargo tiene un porcentaje de bonificacion asignado en la entidad cargo, por lo tanto
+    atraves del empleado y segun su cardo, puedo obtener el bono propuesto para el con la siguiente
+    expesion:
+
+        empleado2.getidCargo().getBono()
+    
+    donde:
+    
+     - empleado es la instancia del objeto empleado creado previamente
+     - getidCargo() -> es el id asociado al cargo del objeto empleado
+     - getBono() -> es el entero que corresponde al cargo consultado ene l paso anterior
 
 
 
