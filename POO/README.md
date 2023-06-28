@@ -49,11 +49,13 @@ La relacion entre las dos entidades se representa como un campo tipo objeto en l
     }
 
 **Modificadores de acceso**
+
 puden ser publicos o privados y nos permiten que el codigo contenido sea visible o accesible desde cualquier parte del codigo o por el contrario requiera codigo mas elavorado para llegar a ellos, esto hace uso de una cararcteristica de la POO que es el encapsulamiento.
 
 por ejemplo la unica forma de realizar cambios a los campos de una entidad deberia ser a traves de los metodos que poseer la misma, teniendo en cuenta el caso de la entidad cuenta, esta solo deberia modificarse a traves de los metodos, depositar, retirar o transferir, esto seria para adicionar saldo a una cuenta ya creada deberioa hacerlo a traves del metodo depositar.
 
 **Static**
+
 Con la palabra reservada static garantizamos que la variable sea una variable de clase y no un campo asociado al modelo de la clase como entidad ej:
 
         private static int total = 0 ;
@@ -76,6 +78,9 @@ con el siguiente metodo obtenemos el total de las cuentas creadas.
 # herencia, polimorfismo e interfaces
 
 **Herencia**
+
+Es la caracteristica que tienen las clases de compartir atributus y nos permiten reutilizar codigo, extendiendo una clase sobre otra.
+
 
 **Ejemplo**
 
