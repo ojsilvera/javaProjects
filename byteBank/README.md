@@ -12,7 +12,7 @@
     Atributos: idSucursal, direccion, telefono
 
     Entidad: empleado
-    Atributos: idEmpleado, idSucursal, idCargo, nombre, edad, cargo, direccion,. telefono, salario
+    Atributos: idEmpleado, idSucursal, idCargo, nombre, edad, direccion,. telefono, salario
 
     Entidad: cargo
     Atributos: idcargo, nombre
@@ -41,6 +41,13 @@
     Entidad: cargo
     Acciones: Crear
               Consultar atributos
+
+**Reglas de negocio**
+
+    Entidad: cargo
+    Accion: Boniificar +10% funcionarios
+            Boniificar +100% gerentes
+
 
 
 

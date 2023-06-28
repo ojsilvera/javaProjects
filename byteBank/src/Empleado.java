@@ -68,4 +68,12 @@ public class Empleado {
         }
     }
 
+    // aplicar bonificaciones por cargo
+
+    public double setBonificacionEmpleado(Cargo codCargo) {
+
+        return this.salario += this.salario * codCargo.getBono();
+
+    }
+
 }
