@@ -17,6 +17,9 @@
     Entidad: cargo
     Atributos: idcargo, nombre
 
+    Entidad: contratista(Hereda de la clase padre empleado)
+    Atributos: idempresa, idScursal, nombreempresa, idjefedirecto
+
 **Aciones por entidad**
 
     Entidad: cuenta
@@ -40,6 +43,10 @@
 
     Entidad: cargo
     Acciones: Crear
+              Consultar atributos
+
+    Entidad: contratista(Hereda de la clase padre empleado)
+    acciones: crear
               Consultar atributos
 
 **Reglas de negocio**

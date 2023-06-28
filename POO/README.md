@@ -81,7 +81,70 @@ con el siguiente metodo obtenemos el total de las cuentas creadas.
 
 Es la caracteristica que tienen las clases de compartir atributus y nos permiten reutilizar codigo, extendiendo una clase sobre otra.
 
+El concepto de herencia se entiende desde la optica, que tendremos una super_clase y clases derivadas o hijas, las clases hijas tendran los atributos individuales y ademas tendran los atributos perteneciente a las super_clases
 
+    **Estructura super_clase y clase hija, representando la herencia**
+            //super_clase-----------------------------------
+            class superClase{
+
+            //campos
+            campo1/atributo1
+                    .
+                    .
+                    .
+                    .
+            campoN/atributoN
+
+            //constructor(puede o no estar, ya que tenemos un constructor por default)
+
+            public superClase(puede o no tener arg){
+
+            }
+
+            //getter -> obtener datos de la clase
+
+            //setter -> almacenar datos de la clase
+
+            //metodos personalizado
+
+            }
+
+            //clase heredada------------------------------------
+            class clasehija extended SuperClase{
+
+            //campos
+            campo1/atributo1_Propios
+                    .
+                    .
+                    .
+                    .
+            campoN/atributoN_Propios
+
+            //constructor(puede o no estar, ya que tenemos un constructor por default)
+            public clasehija(arg propios y de la super_clase){
+
+            super(arg de la super_clase separados por);
+            this.campo1/atributo1_Propios
+                    .
+                    .
+                    .
+                    .
+            this.campoN/atributoN_Propios
+            }
+
+
+            //Constructor
+            public clasehija(sin arg){
+
+            }
+
+            //getter -> obtener datos de la clase
+
+            //setter -> almacenar datos de la clase
+
+            //metodos personalizado
+
+            }
 **Ejemplo**
 
     Objeto: Auto
