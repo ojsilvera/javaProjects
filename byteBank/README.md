@@ -20,6 +20,9 @@
     Entidad: contratista(Hereda de la clase padre empleado)
     Atributos: idempresa, idScursal, nombreempresa, idjefedirecto
 
+    Entidad: ControlBonificacion
+    Atributos: suma
+
 **Aciones por entidad**
 
     Entidad: cuenta
@@ -49,9 +52,12 @@
     acciones: crear
               Consultar atributos
 
+    Entidad: ControlBonificacion
+    Acciones: registrarSalario
+
 **Reglas de negocio**
 
-Aumento del salario por bono segun el cargo
+Aumentar salario por bono segun el cargo
 
     Entidad: cargo
     Accion: Boniificar +10% funcionarios
@@ -70,6 +76,18 @@ Solucion propuesta:
      - empleado es la instancia del objeto empleado creado previamente
      - getidCargo() -> es el id asociado al cargo del objeto empleado
      - getBono() -> es el entero que corresponde al cargo consultado ene l paso anterior
+
+Implementar control de cantidad de bonos entregado a los empleados y contratistas
+
+    Entidad: ControlBonificacion
+    Acciones: Acumular el neto de los bonos entregado, sumarlos y mostrar total en consola
+
+Solucion propuesta:
+
+    Implementar metodo que reciba el salario
+    Obtener el valor del bono a traves del id del bono aplicado al empleado, a traves del campo idbono en la entidad empleado
+    Implementar el calculo del neto del bono asignado segun el cargo y almacenar el acumulado en el campo suma
+    Mostrar en pantalla el caumulado de los bonos entregados, segun la asignacion de los cargos a los empleados y contratistas
 
 
 
