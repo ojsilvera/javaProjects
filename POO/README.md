@@ -152,6 +152,14 @@ El concepto de herencia se entiende desde la optica, que tendremos una super_cla
     - La clase hija lleva junto a su nombre extends y el nombre de la super_clase
     - los parametros del super deben tener el mismo nombre de los campos de la clase padre y a la vez el mismo nombre en los parametros del constructor
     
+**Polimorfismo**
+
+Capacidad de un objeto de comportarse de acuerdo a un contexto, el polimorfismo depende de la herencia y solo puede ser logrado entre clases que exhiban esa comportamiento.
+
+La superclase puede almacenar una instancia de la subclase, por ejemplo:
+
+Figura f1 = new cuadrado();
+
 **Ejemplo**
 
     Objeto: Auto
