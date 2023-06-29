@@ -121,9 +121,10 @@ El concepto de herencia se entiende desde la optica, que tendremos una super_cla
             campoN/atributoN_Propios
 
             //constructor(puede o no estar, ya que tenemos un constructor por default)
+
             public clasehija(arg propios y de la super_clase){
 
-            super(arg de la super_clase separados por);
+            super(arg de la super_clase separados por , );
             this.campo1/atributo1_Propios
                     .
                     .
@@ -145,6 +146,9 @@ El concepto de herencia se entiende desde la optica, que tendremos una super_cla
             //metodos personalizado
 
             }
+
+    # nota importante
+    los parametros del super deben tener el mismo nombre de los campos de la clase padre y a la vez el mismo nombre en los parametros del constructor
 **Ejemplo**
 
     Objeto: Auto

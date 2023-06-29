@@ -1,13 +1,35 @@
 public class Empleado {
 
-    private String idEmpleado;
-    private Sucursal idSucursal;
-    private Cargo idCargo;
-    private String nombre;
-    private String direccion;
-    private String telefono;
-    private int edad;
-    private double salario;
+    protected String idEmpleado;
+    protected Sucursal idSucursal;
+    protected Cargo idCargo;
+    protected String nombre;
+    protected String direccion;
+    protected String telefono;
+    protected int edad;
+    protected double salario;
+
+    // constructor en blanco
+
+    public Empleado() {
+
+    }
+
+    // Constructor parametrizado
+
+    public Empleado(String codEmpleado, Sucursal codSucursal, Cargo codCargo, String nombreEmpleado,
+            String direccionEmpleado, String telefonoEmpleado, int edadEmpleado, double salarioEmpleado) {
+
+        this.idEmpleado = codEmpleado;
+        this.idSucursal = codSucursal;
+        this.idCargo = codCargo;
+        this.nombre = nombreEmpleado;
+        this.direccion = direccionEmpleado;
+        this.telefono = telefonoEmpleado;
+        this.edad = edadEmpleado;
+        this.salario = salarioEmpleado;
+
+    }
 
     // Consulta de atributos entidad empleado
 
@@ -41,31 +63,6 @@ public class Empleado {
 
     public double getSalario() {
         return salario;
-    }
-
-    // crear empleado
-
-    public boolean setCreatedEmpleado(String codEmpleado, Sucursal codSucursal, Cargo codCargo, String nombreEmpleado,
-            String direccionEmpleado, String telefonoEmpleado, int edadEmpleado, double salarioEmpleado) {
-
-        if (codEmpleado != "" && codSucursal != null && codCargo != null && nombreEmpleado != ""
-                && telefonoEmpleado != "" && salarioEmpleado != 0) {
-
-            this.idEmpleado = codEmpleado;
-            this.idSucursal = codSucursal;
-            this.idCargo = codCargo;
-            this.nombre = nombreEmpleado;
-            this.direccion = direccionEmpleado;
-            this.telefono = telefonoEmpleado;
-            this.edad = edadEmpleado;
-            this.salario = salarioEmpleado;
-
-            return true;
-
-        } else {
-
-            return false;
-        }
     }
 
     // aplicar bonificaciones por cargo
