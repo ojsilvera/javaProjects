@@ -1,13 +1,13 @@
 public class Empleado {
 
-    protected String idEmpleado;
-    protected Sucursal idSucursal;
-    protected Cargo idCargo;
-    protected String nombre;
-    protected String direccion;
-    protected String telefono;
-    protected int edad;
-    protected double salario;
+    private String idEmpleado;
+    private Sucursal idSucursal;
+    private Cargo idCargo;
+    private String nombre;
+    private String direccion;
+    private String telefono;
+    private int edad;
+    private double salario;
 
     // constructor en blanco
 
