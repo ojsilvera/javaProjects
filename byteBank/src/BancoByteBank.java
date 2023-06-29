@@ -14,15 +14,15 @@ public class BancoByteBank {
                 Empleado empleado2 = new Empleado("2", sucursal1, cargo2, "Mariluz cardona de Silvera",
                                 "calle 85 # 100 - 105", "+57-364609", 22, 620000);
 
-                cargo1.setCreatedCargo(1, "Funcionario", 0.1);
-                cargo2.setCreatedCargo(2, "Gerente", 1);
-                cargo3.setCreatedCargo(3, "Contratista", 0);
-
-                sucursal1.setCreatedSucursal(1, "San_Isidro", "+57-3720440");
-
                 Contratista cont1 = new Contratista(1, "Los limoncitos de ella", "cont-1",
                                 sucursal1, cargo3, "Aurelio Munoz", "los pinos calle 30 # 89", "+57-3689574", 28,
                                 1000000);
+
+                cargo1.setCreatedCargo(1, "Funcionario", 0.1);
+                cargo2.setCreatedCargo(2, "Gerente", 1.1);
+                cargo3.setCreatedCargo(3, "Contratista", 0);
+
+                sucursal1.setCreatedSucursal(1, "San_Isidro", "+57-3720440");
 
                 // verificamos logica de negocio
                 System.out.println(empleado1.setBonificacionEmpleado(empleado1.getidCargo().getvalorBono()));
