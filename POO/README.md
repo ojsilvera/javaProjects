@@ -110,7 +110,7 @@ El concepto de herencia se entiende desde la optica, que tendremos una super_cla
             }
 
             //clase heredada------------------------------------
-            class clasehija extended SuperClase{
+            class clasehija extend SuperClase{
 
             //campos
             campo1/atributo1_Propios
@@ -147,8 +147,11 @@ El concepto de herencia se entiende desde la optica, que tendremos una super_cla
 
             }
 
-    # nota importante
-    los parametros del super deben tener el mismo nombre de los campos de la clase padre y a la vez el mismo nombre en los parametros del constructor
+    # nota importante sobre Herencia
+    - Los campos de la super_clase deben estar en proted para que sean visibles por la case hija
+    - La clase hija lleva junto a su nombre extends y el nombre de la super_clase
+    - los parametros del super deben tener el mismo nombre de los campos de la clase padre y a la vez el mismo nombre en los parametros del constructor
+    
 **Ejemplo**
 
     Objeto: Auto
