@@ -30,7 +30,7 @@ public class BancoByteBank {
 
                 control.registrarSalario(cont1);
 
-                // verificamos logica de negocio
+                // verificamos logica de negocio para empleado y tipo de empleado
                 System.out.println(empleado1.setBonificacionEmpleado(empleado1.getidCargo().getvalorBono()));
                 System.out.println("-----------------------------------------------------");
 
@@ -43,6 +43,25 @@ public class BancoByteBank {
                 cont1.setBonificacionEmpleado(cont1.getidCargo().getvalorBono());
                 System.out.println("Salario contratista1: " + cont1.getSalario());
 
+                // probando clientes y cuentas
+
+                Cliente cliente1 = new Cliente("1", "Oscar Serrano", "N/A", "+58-3265478");
+                Cliente cliente2 = new Cliente("2", "Johan Davila", "N/A", "+58-3262678");
+
+                CuentaAhorros cca1 = new CuentaAhorros(sucursal1, cliente1, 14376817);
+                cca1.depositar(100000);
+                System.out.println(cca1.getSaldo());
+
+                CuentaAhorros cca2 = new CuentaAhorros(sucursal1, cliente2, 14256817);
+                cca2.depositar(50000);
+                System.out.println(cca2.getSaldo());
+
+                // transferencia entre cuentas
+
+                // cca1.transferir(20000, cca2);
+                // System.out.println(cca1.getSaldo());
+
+                // System.out.println(cca2.getSaldo());
         }
 
         // FIXME: PASAR DEL METODO SETCREATED A LOS DOS CONSTRUCTORES UNO

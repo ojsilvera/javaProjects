@@ -5,6 +5,15 @@ public class Cuenta {
     private Cliente idTitular;
     private double saldo;
 
+    // Constructor
+    public Cuenta(Sucursal numeroSucursal, Cliente documentoCliente, int numeroCuenta) {
+
+        this.idSucursal = numeroSucursal;
+        this.idTitular = documentoCliente;
+        this.idCuenta = numeroCuenta;
+
+    }
+
     public int getIdCuenta() {
         return idCuenta;
     }
@@ -19,25 +28,6 @@ public class Cuenta {
 
     public double getSaldo() {
         return saldo;
-    }
-
-    // crear cuenta
-    public boolean setCreatedCuenta(Sucursal numeroSucursal, Cliente documentoCliente, int numeroCuenta,
-            double valorSaldo) {
-
-        if (idSucursal != null && documentoCliente != null && numeroCuenta != 0) {
-
-            this.idSucursal = numeroSucursal;
-            this.idTitular = documentoCliente;
-            this.idCuenta = numeroCuenta;
-            this.saldo = valorSaldo;
-
-            return true;
-
-        } else {
-
-            return false;
-        }
     }
 
     // metodo depositar
@@ -59,6 +49,7 @@ public class Cuenta {
 
         if (this.saldo >= valor) {
 
+            this.retirar(valor);
             cuentaDestino.depositar(valor);
             return true;
 
