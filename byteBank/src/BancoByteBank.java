@@ -60,6 +60,8 @@ public class BancoByteBank {
                 // transferencia entre cuentas
                 System.out.println("-----------------------------------------------------");
                 ca1.transferir(20000, ca2);
+
+                // mostrar estados de las cuentas
                 System.out.println("saldo cuenta 2: " + ca2.getSaldo());
                 System.out.println("saldo cuenta 1: " + ca1.getSaldo());
                 System.out.println("-----------------------------------------------------");
@@ -69,6 +71,10 @@ public class BancoByteBank {
         // FIXME: bug en la transferencia entre cuentas, se cobra comision a quien
         // deposita y quien recibe el salgo, la comision solo es para que realiza la
         // transferencia.
+
+        // FIXME: como indico que el depisito y retiro son provenientes de una
+        // transaccion por transferencia entre cuentas y no por movimientos directos de
+        // una sola cuenta?
 
         // FIXME: PASAR DEL METODO SETCREATED A LOS DOS CONSTRUCTORES UNO
         // VACIOS(DEFAULT) Y OTRO PARAMETRIZADP, CON EL OBJETIVO DE CREAR LOS OBJETOS

@@ -63,8 +63,8 @@ public class Cuenta {
 
         if (this.saldo >= valor) {
 
-            this.saldo -= valor;
-            cuentaDestino.saldo += valor;
+            this.retirar(valor);
+            cuentaDestino.depositar(valor);
 
             return true;
 

@@ -13,7 +13,6 @@ public class CuentaAhorros extends Cuenta {
 
         double comision = cantidad * 0.05;
         double nuevoValor = cantidad - comision;
-        System.out.println("valor comision: " + comision);
 
         return nuevoValor;
 
@@ -39,7 +38,7 @@ public class CuentaAhorros extends Cuenta {
     @Override
     public boolean transferir(double valor, Cuenta cuentaDestino) {
 
-        return super.transferir(comision(valor), cuentaDestino);
+        return super.transferir(valor, cuentaDestino);
 
     }
 
