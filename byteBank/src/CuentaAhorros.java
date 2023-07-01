@@ -1,5 +1,7 @@
 public class CuentaAhorros extends Cuenta {
 
+    // constructor
+
     public CuentaAhorros(Sucursal numeroSucursal, Cliente documentoCliente, int numeroCuenta) {
         super(numeroSucursal, documentoCliente, numeroCuenta);
 
@@ -11,6 +13,8 @@ public class CuentaAhorros extends Cuenta {
 
         double comision = cantidad * 0.05;
         double nuevoValor = cantidad - comision;
+        System.out.println("valor comision: " + comision);
+
         return nuevoValor;
 
     }
@@ -24,11 +28,18 @@ public class CuentaAhorros extends Cuenta {
 
     }
 
+    @Override
+    public boolean retirar(double valor) {
+
+        return super.retirar(comision(valor));
+
+    }
+
     // transferencia entre cuentas
     @Override
     public boolean transferir(double valor, Cuenta cuentaDestino) {
 
-        return cuentaDestino.depositar(comision(valor));
+        return super.transferir(comision(valor), cuentaDestino);
 
     }
 

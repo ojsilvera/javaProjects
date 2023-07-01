@@ -42,27 +42,33 @@ public class BancoByteBank {
 
                 cont1.setBonificacionEmpleado(cont1.getidCargo().getvalorBono());
                 System.out.println("Salario contratista1: " + cont1.getSalario());
+                System.out.println("-----------------------------------------------------");
 
                 // probando clientes y cuentas
 
                 Cliente cliente1 = new Cliente("1", "Oscar Serrano", "N/A", "+58-3265478");
                 Cliente cliente2 = new Cliente("2", "Johan Davila", "N/A", "+58-3262678");
 
-                CuentaAhorros cca1 = new CuentaAhorros(sucursal1, cliente1, 14376817);
-                cca1.depositar(100000);
-                System.out.println(cca1.getSaldo());
+                CuentaAhorros ca1 = new CuentaAhorros(sucursal1, cliente1, 14376817);
+                ca1.depositar(100000);
+                System.out.println("Saldo cuenta 1: " + ca1.getSaldo());
 
-                CuentaAhorros cca2 = new CuentaAhorros(sucursal1, cliente2, 14256817);
-                cca2.depositar(50000);
-                System.out.println(cca2.getSaldo());
+                CuentaAhorros ca2 = new CuentaAhorros(sucursal1, cliente2, 14256817);
+                ca2.depositar(50000);
+                System.out.println("saldo cuenta 2: " + ca2.getSaldo());
 
                 // transferencia entre cuentas
+                System.out.println("-----------------------------------------------------");
+                ca1.transferir(20000, ca2);
+                System.out.println("saldo cuenta 2: " + ca2.getSaldo());
+                System.out.println("saldo cuenta 1: " + ca1.getSaldo());
+                System.out.println("-----------------------------------------------------");
 
-                // cca1.transferir(20000, cca2);
-                // System.out.println(cca1.getSaldo());
-
-                // System.out.println(cca2.getSaldo());
         }
+
+        // FIXME: bug en la transferencia entre cuentas, se cobra comision a quien
+        // deposita y quien recibe el salgo, la comision solo es para que realiza la
+        // transferencia.
 
         // FIXME: PASAR DEL METODO SETCREATED A LOS DOS CONSTRUCTORES UNO
         // VACIOS(DEFAULT) Y OTRO PARAMETRIZADP, CON EL OBJETIVO DE CREAR LOS OBJETOS

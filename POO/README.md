@@ -160,6 +160,14 @@ La superclase puede almacenar una instancia de la subclase, por ejemplo:
 
 Figura f1 = new cuadrado();
 
+**Abstraccion**
+
+Este porincipio nos permite entender e implementar la super_clase o padre, como lo que es una plantilla de creacion de otras clases que heredan atributos y metodos, permitiendo mantener las clases generalistas lejos del instanciamiento en la implementacion del codigo y que por este motivo solo es posible instanciar clases hijas, que heredan los atributos y metodos de la super_clase ya sea de manera parcial o totalmente, esto de acuerdo a la logica de negocio implementada, en java se marca esta bastraccion con la palabra reserbada "abstract" de la siguiente manera.
+
+    public abstract class NombreClases{
+        
+    }
+
 **Ejemplo**
 
     Objeto: Auto

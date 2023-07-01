@@ -44,21 +44,6 @@ public class Cuenta {
         }
     }
 
-    // metodo transferir entre cuentas
-    public boolean transferir(double valor, Cuenta cuentaDestino) {
-
-        if (this.saldo >= valor) {
-
-            this.retirar(valor);
-            cuentaDestino.depositar(valor);
-            return true;
-
-        } else {
-
-            return false;
-        }
-    }
-
     // metodo retirar
     public boolean retirar(double valor) {
 
@@ -73,4 +58,19 @@ public class Cuenta {
         }
     }
 
+    // metodo transferir entre cuentas
+    public boolean transferir(double valor, Cuenta cuentaDestino) {
+
+        if (this.saldo >= valor) {
+
+            this.saldo -= valor;
+            cuentaDestino.saldo += valor;
+
+            return true;
+
+        } else {
+
+            return false;
+        }
+    }
 }
