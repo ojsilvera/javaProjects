@@ -17,28 +17,28 @@ public class BancoByteBank {
                                 "calle 85 # 100 - 105", "+57-364609", 40,
                                 320000);
 
-                control.registrarSalario(empleado1);
-
                 Empleado empleado2 = new Empleado("2", sucursal1, cargo2, "Mariluz cardona de Silvera",
                                 "calle 85 # 100 - 105", "+57-364609", 22, 620000);
-
-                control.registrarSalario(empleado2);
 
                 Contratista cont1 = new Contratista(1, "Los limoncitos de ella", "cont-1",
                                 sucursal1, cargo3, "Aurelio Munoz", "los pinos calle 30 # 89", "+57-3689574", 28,
                                 1000000);
 
+                System.out.println("------------------Bonificaciones acumuladas----------");
+
+                control.registrarSalario(empleado1);
+                control.registrarSalario(empleado2);
                 control.registrarSalario(cont1);
 
+                System.out.println("-----------------------------------------------------");
+
                 // verificamos logica de negocio para empleado y tipo de empleado
-                System.out.println(empleado1.setBonificacionEmpleado(empleado1.getidCargo().getvalorBono()));
-                System.out.println("-----------------------------------------------------");
 
-                System.out.println(empleado2.setBonificacionEmpleado(empleado2.getidCargo().getvalorBono()));
-                System.out.println("-----------------------------------------------------");
+                System.out.println("Bono neto emp1: "
+                                + empleado1.setBonificacionEmpleado(empleado1.getidCargo().getvalorBono()));
 
-                System.out.println(cont1.getidCargo().getvalorBono());
-                System.out.println("-----------------------------------------------------");
+                System.out.println("Bono neto emp2: "
+                                + empleado2.setBonificacionEmpleado(empleado2.getidCargo().getvalorBono()));
 
                 cont1.setBonificacionEmpleado(cont1.getidCargo().getvalorBono());
                 System.out.println("Salario contratista1: " + cont1.getSalario());
@@ -49,16 +49,18 @@ public class BancoByteBank {
                 Cliente cliente1 = new Cliente("1", "Oscar Serrano", "N/A", "+58-3265478");
                 Cliente cliente2 = new Cliente("2", "Johan Davila", "N/A", "+58-3262678");
 
+                // depositos y carga de cuentas
+                System.out.println("-----------Depositos iniciales-----------------------");
                 CuentaAhorros ca1 = new CuentaAhorros(sucursal1, cliente1, 14376817);
-                ca1.depositar(100000);
-                System.out.println("Saldo cuenta 1: " + ca1.getSaldo());
+                // ca1.depositar(100000);
+                System.out.println("saldo cuenta 1: " + ca1.getSaldo());
 
                 CuentaAhorros ca2 = new CuentaAhorros(sucursal1, cliente2, 14256817);
-                ca2.depositar(50000);
+                // ca2.depositar(50000);
                 System.out.println("saldo cuenta 2: " + ca2.getSaldo());
+                System.out.println("-----------------------------------------------------");
 
                 // transferencia entre cuentas
-                System.out.println("-----------------------------------------------------");
                 ca1.transferir(20000, ca2);
 
                 // mostrar estados de las cuentas
@@ -68,13 +70,8 @@ public class BancoByteBank {
 
         }
 
-        // FIXME: bug en la transferencia entre cuentas, se cobra comision a quien
-        // deposita y quien recibe el salgo, la comision solo es para que realiza la
-        // transferencia.
-
-        // FIXME: como indico que el depisito y retiro son provenientes de una
-        // transaccion por transferencia entre cuentas y no por movimientos directos de
-        // una sola cuenta?
+        // FIXME: reanalizar el proceso de transferencia para evitar el contador y que
+        // aun asi no se cobre doble la comision.
 
         // FIXME: PASAR DEL METODO SETCREATED A LOS DOS CONSTRUCTORES UNO
         // VACIOS(DEFAULT) Y OTRO PARAMETRIZADP, CON EL OBJETIVO DE CREAR LOS OBJETOS
