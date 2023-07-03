@@ -42,7 +42,6 @@ public class BancoByteBank {
 
                 cont1.setBonificacionEmpleado(cont1.getidCargo().getvalorBono());
                 System.out.println("Salario contratista1: " + cont1.getSalario());
-                System.out.println("-----------------------------------------------------");
 
                 // probando clientes y cuentas
 
@@ -50,28 +49,22 @@ public class BancoByteBank {
                 Cliente cliente2 = new Cliente("2", "Johan Davila", "N/A", "+58-3262678");
 
                 // depositos y carga de cuentas
-                System.out.println("-----------Depositos iniciales-----------------------");
                 CuentaAhorros ca1 = new CuentaAhorros(sucursal1, cliente1, 14376817);
-                // ca1.depositar(100000);
-                System.out.println("saldo cuenta 1: " + ca1.getSaldo());
+                ca1.depositar(100000);
 
                 CuentaAhorros ca2 = new CuentaAhorros(sucursal1, cliente2, 14256817);
-                // ca2.depositar(50000);
-                System.out.println("saldo cuenta 2: " + ca2.getSaldo());
-                System.out.println("-----------------------------------------------------");
+                ca2.depositar(50000);
 
                 // transferencia entre cuentas
                 ca1.transferir(20000, ca2);
 
                 // mostrar estados de las cuentas
+                System.out.println("----------------resultado de transferir--------------");
                 System.out.println("saldo cuenta 2: " + ca2.getSaldo());
                 System.out.println("saldo cuenta 1: " + ca1.getSaldo());
                 System.out.println("-----------------------------------------------------");
 
         }
-
-        // FIXME: reanalizar el proceso de transferencia para evitar el contador y que
-        // aun asi no se cobre doble la comision.
 
         // FIXME: PASAR DEL METODO SETCREATED A LOS DOS CONSTRUCTORES UNO
         // VACIOS(DEFAULT) Y OTRO PARAMETRIZADP, CON EL OBJETIVO DE CREAR LOS OBJETOS

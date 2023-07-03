@@ -64,12 +64,7 @@ public class Cuenta {
         if (this.saldo >= valor) {
 
             this.retirar(valor);
-            System.out.println("valor a retirar de ca1: " + valor);
-            System.out.println("-----------------------------------------------------");
-
             cuentaDestino.depositar(valor);
-            System.out.println("valor a depositar a ca2: " + valor);
-            System.out.println("-----------------------------------------------------");
 
             return true;
 
