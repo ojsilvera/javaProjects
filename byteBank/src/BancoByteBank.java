@@ -1,18 +1,13 @@
 public class BancoByteBank {
         public static void main(String[] args) throws Exception {
                 // instanciamos objetos y cargamos sus valores.
-                Cargo cargo1 = new Cargo();
-                Cargo cargo2 = new Cargo();
-                Cargo cargo3 = new Cargo();
-                Cargo cargo4 = new Cargo();
+                Cargo cargo1 = new Cargo(1, "Secretaria", 0.1);
+                Cargo cargo2 = new Cargo(2, "Gerente", 1);
+                Cargo cargo3 = new Cargo(3, "Contratista", 0.05);
+                Cargo cargo4 = new Cargo(4, "Contador", 0.05);
 
                 ControlBonificacion control = new ControlBonificacion();
                 Sucursal sucursal1 = new Sucursal();
-
-                cargo1.setCreatedCargo(1, "Secretaria", 0.1);
-                cargo2.setCreatedCargo(2, "Gerente", 1);
-                cargo3.setCreatedCargo(3, "Contratista", 0.05);
-                cargo4.setCreatedCargo(4, "Contador", 0.05);
 
                 sucursal1.setCreatedSucursal(1, "San_Isidro", "+57-3720440");
 
