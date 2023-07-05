@@ -7,7 +7,7 @@ public class BancoByteBank {
                 ControlBonificacion control = new ControlBonificacion();
                 Sucursal sucursal1 = new Sucursal();
 
-                cargo1.setCreatedCargo(1, "Funcionario", 0.1);
+                cargo1.setCreatedCargo(1, "Secretaria", 0.1);
                 cargo2.setCreatedCargo(2, "Gerente", 1);
                 cargo3.setCreatedCargo(3, "Contratista", 0.05);
 
