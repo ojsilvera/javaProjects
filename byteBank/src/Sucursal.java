@@ -4,7 +4,18 @@ public class Sucursal {
     private String direccion;
     private String telefono;
 
-    // consultar
+    // constructores
+
+    public Sucursal(int codSucursal, String direccionSucursal, String telefonoSucursal) {
+
+        this.idSucursal = codSucursal;
+        this.direccion = direccionSucursal;
+        this.telefono = telefonoSucursal;
+
+    }
+
+    // Getters y Setters
+
     public int getIdSucursal() {
         return idSucursal;
     }
@@ -17,21 +28,6 @@ public class Sucursal {
         return telefono;
     }
 
-    // acciones
-    // crear
-    public boolean setCreatedSucursal(int codSucursal, String direccionSucursal, String telefonoSucursal) {
+    // Otros metodos
 
-        if (codSucursal != 0 && telefonoSucursal != "") {
-
-            this.idSucursal = codSucursal;
-            this.direccion = direccionSucursal;
-            this.telefono = telefonoSucursal;
-            return true;
-
-        } else {
-
-            return true;
-
-        }
-    }
 }
