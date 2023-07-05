@@ -1,4 +1,4 @@
-public class Cuenta {
+public abstract class Cuenta {
 
     private int idCuenta;
     private Sucursal idSucursal;

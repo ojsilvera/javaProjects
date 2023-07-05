@@ -70,4 +70,10 @@ public class BancoByteBank {
         // VACIOS(DEFAULT) Y OTRO PARAMETRIZADP, CON EL OBJETIVO DE CREAR LOS OBJETOS
         // INICIALES CON CONSTRUCTORES
 
+        // FIXME: implementar clases abstractas, en cuenta e hijas y empleado e hijos
+
+        // FIXME: implementar interfaces donde sea posible.
+
+        // i FIXME: IMPLEMENTAR CLASES SECRETARIA, CONTADOR Y GERENTE.
+
 }

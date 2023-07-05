@@ -148,7 +148,7 @@ El concepto de herencia se entiende desde la optica, que tendremos una super_cla
             }
 
     # nota importante sobre Herencia
-    - Los campos de la super_clase deben estar private y a traves de super(campos) son visibles por la case hija
+    - Los campos de la super_clase deben estar private y a traves de super(campos) son visibles por la clase hija
     - La clase hija lleva junto a su nombre extends y el nombre de la super_clase
     - los parametros del super deben tener el mismo nombre de los campos de la clase padre y a la vez el mismo nombre en los parametros del constructor
     
@@ -162,11 +162,15 @@ Figura f1 = new cuadrado();
 
 **Abstraccion**
 
-Este porincipio nos permite entender e implementar la super_clase o padre, como lo que es una plantilla de creacion de otras clases que heredan atributos y metodos, permitiendo mantener las clases generalistas lejos del instanciamiento en la implementacion del codigo y que por este motivo solo es posible instanciar clases hijas, que heredan los atributos y metodos de la super_clase ya sea de manera parcial o totalmente, esto de acuerdo a la logica de negocio implementada, en java se marca esta bastraccion con la palabra reserbada "abstract" de la siguiente manera.
+Este porincipio nos permite entender e implementar la super_clase o padre, como lo que es, una plantilla de creacion de otras clases que heredan atributos y metodos, permitiendo mantener las clases generalistas lejos del instanciamiento en la implementacion del codigo y que por este motivo solo es posible instanciar clases hijas, que heredan los atributos y metodos de la super_clase ya sea de manera parcial o total, esto de acuerdo a la logica de negocio implementada, en java se marca esta bastraccion con la palabra reservada "abstract" de la siguiente manera.
 
-    public abstract class NombreClases{
-        
+En el caso de la abstraccion la clase abstracta debera ser declarada con la palabra reservada abstract y sus atributos seran del tipo protected.
+
+    public abstract class{
+
+        protected tipo atributo_n;
     }
+
 
 **Ejemplo**
 

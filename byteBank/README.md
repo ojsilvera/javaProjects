@@ -55,6 +55,12 @@
     Entidad: ControlBonificacion
     Acciones: registrarSalario
 
+
+
+// FIXME: Actualizar modelado de las clases agragando la cuenta corriente y
+// ahorros en el readem, con sus comportamientos
+
+
 **Reglas de negocio**
 
 Aumentar salario por bono segun el cargo
