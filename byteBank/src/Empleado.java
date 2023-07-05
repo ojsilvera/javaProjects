@@ -1,4 +1,4 @@
-public class Empleado {
+public abstract class Empleado {
 
     private String idEmpleado;
     private Sucursal idSucursal;
