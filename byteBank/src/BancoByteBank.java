@@ -81,6 +81,4 @@ public class BancoByteBank {
 
         // FIXME: implementar interfaces donde sea posible.
 
-        // i FIXME: IMPLEMENTAR CLASES SECRETARIA, CONTADOR Y GERENTE.
-
 }

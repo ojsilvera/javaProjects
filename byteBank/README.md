@@ -22,6 +22,20 @@
 
     Entidad: ControlBonificacion
     Atributos: suma
+    
+    Entidad: Contatista
+    Atributos: N/A
+    
+    Entidad: Gerente
+    Atributos: N/A
+    
+    Entidad: Secretaria
+    Atributos: N/A
+    
+    Entidad: Contador
+    Atributos: N/A
+
+
 
 **Aciones por entidad**
 
@@ -53,13 +67,19 @@
               Consultar atributos
 
     Entidad: ControlBonificacion
-    Acciones: registrarSalario
+    acciones: registrarSalario
 
-
-
-// FIXME: Actualizar modelado de las clases agragando la cuenta corriente y
-// ahorros en el readem, con sus comportamientos
-
+    Entidad: Contatista
+    acciones: N/A
+    
+    Entidad: Gerente
+    acciones: N/A
+    
+    Entidad: Secretaria
+    acciones: N/A
+    
+    Entidad: Contador
+    acciones: N/A
 
 **Reglas de negocio**
 
