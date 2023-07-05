@@ -60,20 +60,7 @@ public class BancoByteBank {
                 // transferencia entre cuentas
                 ca1.transferir(20000, ca2);
 
-                // mostrar estados de las cuentas
-                System.out.println("----------------resultado de transferir--------------");
-                System.out.println("saldo cuenta 2: " + ca2.getSaldo());
-                System.out.println("saldo cuenta 1: " + ca1.getSaldo());
-                System.out.println("-----------------------------------------------------");
-
         }
-
-        // FIXME: PASAR DEL METODO SETCREATED A LOS DOS CONSTRUCTORES UNO
-        // VACIOS(DEFAULT) Y OTRO PARAMETRIZADP, CON EL OBJETIVO DE CREAR LOS OBJETOS
-        // INICIALES CON CONSTRUCTORES
-
-        // FIXME: implementar clases abstractas, en cuenta e hijas y empleado e hijos
-
         // FIXME: implementar interfaces donde sea posible.
 
 }

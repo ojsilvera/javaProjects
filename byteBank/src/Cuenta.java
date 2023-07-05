@@ -65,11 +65,16 @@ public abstract class Cuenta {
 
             this.retirar(valor);
             cuentaDestino.depositar(valor);
-
+            System.out.println("----------------resultado de de la transferencia-----");
+            System.out.println("Transferencia exitosa");
+            System.out.println("saldo cuenta Destino: " + cuentaDestino.saldo);
+            System.out.println("saldo cuenta origen: " + this.saldo);
+            System.out.println("-----------------------------------------------------");
             return true;
 
         } else {
-
+            System.out.println("----------------resultado de de la transferencia-----");
+            System.out.println("Saldo en cuenta origen insuficiente");
             return false;
         }
     }
