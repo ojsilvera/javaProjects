@@ -171,6 +171,34 @@ En el caso de la abstraccion la clase abstracta debera ser declarada con la pala
         protected tipo atributo_n;
     }
 
+**Interfaces**
+
+Permiten la herencia multipe, funcionan como una suerte de bypass, que permite a una clase heredar de mas de una clase padre, se debe tener en cuenta lo siguiente
+
+    - para implementar las interfaces en java, se crea una clase del tipo interface:
+        
+        public interface nombreInterfase{
+
+        }
+    
+    - las interfaces son del tipo abstracto, por lo tanto sus metodos son abstractos, asi que no llevan implementacion de los mismos
+
+    - la interfaces no pueden heredar o extender de otras clases y otras clases no pueden heredar o extender de dichas intefaces
+
+    - la forma correcta de relacionar una clase con una interface seria:
+
+        public class nombreClase implements nombreInterface{
+
+        }
+
+    - cabe anotar que al ser una tipo abstracto la interface, nos obliga a implementar sus metodos, en la clase que esta implementando diche interface
+
+    - es posible extender una clase y tener tantas interfaces como sea necesario actuando sobre dicha clase 
+
+        public class nombreClase extends seperClase implements nombreInterface{
+
+        }
+
 
 **Ejemplo**
 
