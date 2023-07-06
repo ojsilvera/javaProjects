@@ -35,6 +35,8 @@
     Entidad: Contador
     Atributos: N/A
 
+    Entidad: Administrador
+    Atributos: N/A
 
 
 **Aciones por entidad**
@@ -80,6 +82,10 @@
     
     Entidad: Contador
     acciones: N/A
+
+    Entidad: Administrador_sistema
+    Atributos: N/A
+
 
 **Reglas de negocio**
 

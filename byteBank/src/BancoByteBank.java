@@ -5,9 +5,9 @@ public class BancoByteBank {
                 Cargo cargo2 = new Cargo(2, "Gerente", 1);
                 Cargo cargo3 = new Cargo(3, "Contratista", 0.05);
                 Cargo cargo4 = new Cargo(4, "Contador", 0.05);
+                Sucursal sucursal1 = new Sucursal(1, "San_Isidro", "+57-3720440");
 
                 ControlBonificacion control = new ControlBonificacion();
-                Sucursal sucursal1 = new Sucursal(1, "San_Isidro", "+57-3720440");
 
                 Gerente gerente1 = new Gerente("1", sucursal1, cargo2, "Oscar Silvera", "calle 85 # 100 - 105",
                                 "+57-364609", 40, 320000);
@@ -60,5 +60,7 @@ public class BancoByteBank {
 
         }
         // FIXME: implementar interfaces donde sea posible.
+
+        // FIXME implementar clase cuenta corriente
 
 }
