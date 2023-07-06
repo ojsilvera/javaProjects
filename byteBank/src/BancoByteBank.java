@@ -62,8 +62,6 @@ public class BancoByteBank {
 
         // TODO: implementar interfaces donde sea posible.
 
-        // TODO: implementar clase cuenta corriente.
-
         // TODO: eliminar las clases gerente, contratista, secretaria y contador
 
         // TODO: aplicar los conceptos de herencia y polimorfismos con las clases

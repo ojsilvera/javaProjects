@@ -193,11 +193,17 @@ Permiten la herencia multipe, funcionan como una suerte de bypass, que permite a
 
     - cabe anotar que al ser una tipo abstracto la interface, nos obliga a implementar sus metodos, en la clase que esta implementando diche interface
 
-    - es posible extender una clase y tener tantas interfaces como sea necesario actuando sobre dicha clase 
+    - es posible extender una clase y tener tantas interfaces como sea necesario actuando sobre dicha clase
 
         public class nombreClase extends seperClase implements nombreInterface{
 
         }
+
+    - pueden ser enviados como argumentos de un metodos:
+
+        public nameMethod(nombreInterface nombre){}
+
+    - No poseen atributos, ni constructores.
 
 
 **Ejemplo**
