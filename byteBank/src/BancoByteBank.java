@@ -59,8 +59,16 @@ public class BancoByteBank {
                 ca1.transferir(20000, ca2);
 
         }
-        // FIXME: implementar interfaces donde sea posible.
 
-        // FIXME implementar clase cuenta corriente
+        // TODO: implementar interfaces donde sea posible.
+
+        // TODO: implementar clase cuenta corriente.
+
+        // TODO: eliminar las clases gerente, contratista, secretaria y contador
+
+        // TODO: aplicar los conceptos de herencia y polimorfismos con las clases
+        // empleado, cargo
+
+        // TODO: reemplazar las clases cuenta de ahorros por tipo de cuenta.
 
 }
