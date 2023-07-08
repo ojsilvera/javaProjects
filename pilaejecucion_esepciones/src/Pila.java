@@ -1,10 +1,17 @@
 public class Pila {
     public static void main(String[] args) throws Exception {
 
-        for (int i = 1; i <= 10; i++) {
+        try {
 
-            System.out.println(i);
+            double result = 15 / 0;
 
+            System.out.println(result);
+
+        } catch (Exception e) {
+
+            System.err.println(e.getMessage());
+
+            System.err.println(e.getCause());
         }
 
     }
