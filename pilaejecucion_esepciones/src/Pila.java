@@ -1,18 +1,31 @@
 public class Pila {
-    public static void main(String[] args) throws Exception {
 
-        try {
+    public double saldo;
 
-            double result = 15 / 0;
+    public Pila(double saldo) {
 
-            System.out.println(result);
-
-        } catch (Exception e) {
-
-            System.err.println(e.getMessage());
-
-            System.err.println(e.getCause());
-        }
+        this.saldo = saldo;
 
     }
+
+    public double getSaldo() {
+        return saldo;
+    }
+
+    public void setSaldo(double saldo) {
+        this.saldo = saldo;
+    }
+
+    public void retiro(double saldo) {
+
+        if (this.saldo < saldo) {
+
+            throw new saldoExcepcion("Saldo insuficiente");
+
+        }
+
+        this.saldo = this.saldo - saldo;
+
+    }
+
 }
