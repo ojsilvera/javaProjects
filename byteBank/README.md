@@ -1,9 +1,9 @@
 # Projecto entidad financiera Byte Bank
 
-**Modelado de Entidades**
-	
+## Modelado de Entidades
+
     Entidad: cuenta
-	Atributos: idCuenta, idSucursal, idTitular, saldo
+    Atributos: idCuenta, idSucursal, idTitular, saldo
 
     Entidad: Cliente
     Atributos: idTitular, nombre, documento, direccion, telefono
@@ -38,8 +38,7 @@
     Entidad: Administrador
     Atributos: N/A
 
-
-**Aciones por entidad**
+## Aciones por entidad
 
     Entidad: cuenta
     Acciones: Crear
@@ -86,8 +85,7 @@
     Entidad: Administrador_sistema
     Atributos: N/A
 
-
-**Reglas de negocio**
+## Reglas de negocio
 
 Aumentar salario por bono segun el cargo
 
@@ -120,7 +118,3 @@ Solucion propuesta:
     Obtener el valor del bono a traves del id del bono aplicado al empleado, a traves del campo idbono en la entidad empleado
     Implementar el calculo del neto del bono asignado segun el cargo y almacenar el acumulado en el campo suma
     Mostrar en pantalla el caumulado de los bonos entregados, segun la asignacion de los cargos a los empleados y contratistas
-
-
-
-
