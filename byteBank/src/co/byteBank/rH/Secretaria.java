@@ -1,3 +1,7 @@
+import Sucursal;
+
+package co.byteBank.rH;
+
 public class Secretaria extends Empleado {
 
     // Campos

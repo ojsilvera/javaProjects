@@ -1,3 +1,5 @@
+package co.byteBank.rH;
+
 public class Cargo {
 
     // Campos propios

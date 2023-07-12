@@ -1,3 +1,5 @@
+package co.byteBank.rH;
+
 public class ControlBonificacion {
 
     private double suma;

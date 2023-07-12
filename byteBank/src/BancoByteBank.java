@@ -1,3 +1,10 @@
+import co.byteBank.rH.Cargo;
+import co.byteBank.rH.Contador;
+import co.byteBank.rH.Contratista;
+import co.byteBank.rH.ControlBonificacion;
+import co.byteBank.rH.Gerente;
+import co.byteBank.rH.Secretaria;
+
 public class BancoByteBank {
         public static void main(String[] args) throws Exception {
                 // instanciamos objetos y cargamos sus valores.

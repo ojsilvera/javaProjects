@@ -1,3 +1,7 @@
+import Sucursal;
+
+package co.byteBank.rH;
+
 public class Contador extends Empleado {
 
     // Campos propios

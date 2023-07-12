@@ -1,3 +1,7 @@
+import Sucursal;
+
+package co.byteBank.rH;
+
 public abstract class Empleado {
 
     private String idEmpleado;

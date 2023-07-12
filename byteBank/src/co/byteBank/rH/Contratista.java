@@ -1,3 +1,7 @@
+import Sucursal;
+
+package co.byteBank.rH;
+
 public class Contratista extends Empleado {
     // campos
     private int idEmpresa;
