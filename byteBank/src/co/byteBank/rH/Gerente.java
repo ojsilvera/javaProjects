@@ -1,6 +1,6 @@
-import Sucursal;
-
 package co.byteBank.rH;
+
+import co.byteBank.operaciones.Sucursal;
 
 public class Gerente extends Empleado {
 

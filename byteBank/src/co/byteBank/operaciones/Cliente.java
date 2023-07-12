@@ -1,3 +1,5 @@
+package co.byteBank.operaciones;
+
 public class Cliente {
     private String idTitular;
     private String nombre;

@@ -1,3 +1,5 @@
+package co.byteBank.operaciones;
+
 public class Sucursal {
     // campos
     private int idSucursal;

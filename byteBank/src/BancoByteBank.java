@@ -1,3 +1,6 @@
+import co.byteBank.operaciones.Cliente;
+import co.byteBank.operaciones.CuentaAhorros;
+import co.byteBank.operaciones.Sucursal;
 import co.byteBank.rH.Cargo;
 import co.byteBank.rH.Contador;
 import co.byteBank.rH.Contratista;

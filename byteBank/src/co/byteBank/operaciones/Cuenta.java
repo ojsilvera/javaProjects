@@ -1,3 +1,5 @@
+package co.byteBank.operaciones;
+
 public abstract class Cuenta {
 
     private int idCuenta;
