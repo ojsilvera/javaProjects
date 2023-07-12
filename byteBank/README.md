@@ -123,7 +123,7 @@ Implementar paquetes:
 
     Se implementara estructura de paquetes segun la siguiente organizacion:
 
-    - Pais.modelo_de_negocio.departamento.nombre_del_objeto
+    - Pais.modelo_de_negocio.nombre_empresa.departamento.nombre_del_objeto
       
       modelo_de_negocio -> Compañia(com), Organizacion(org), etc.
       departamento -> Recursos Humanos(rh), Operaciones(op), Contabilidad(ctb), etc.
