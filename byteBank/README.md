@@ -118,3 +118,12 @@ Solucion propuesta:
     Obtener el valor del bono a traves del id del bono aplicado al empleado, a traves del campo idbono en la entidad empleado
     Implementar el calculo del neto del bono asignado segun el cargo y almacenar el acumulado en el campo suma
     Mostrar en pantalla el caumulado de los bonos entregados, segun la asignacion de los cargos a los empleados y contratistas
+
+Implementar paquetes:
+
+    Se implementara estructura de paquetes segun la siguiente organizacion:
+
+    - Pais.modelo_de_negocio.departamento.nombre_del_objeto
+      
+      modelo_de_negocio -> Compañia(com), Organizacion(org), etc.
+      departamento -> Recursos Humanos(rh), Operaciones(op), Contabilidad(ctb), etc.
