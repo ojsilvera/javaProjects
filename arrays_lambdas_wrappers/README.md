@@ -14,3 +14,7 @@
         edades[2] = 30; asigna el valor 30 al indice 2 del array edades.
     
     Teniendo presente que los inidices inician en 0, [0 1 2 3 4], posee 5 objetos, pero las posiciones van del 0 al 4.
+
+    Accedemos al valor guardado llamando al nombre del array y la posicion que deseamos recuperar, por ejemplo:
+
+        system.out.println(edades[2]);
