@@ -36,4 +36,12 @@
         Objeto[0] = new Objeto(arg);
         Objeto[1] = new Objeto(arg);
 
+    Ahora existe una clase especial que es la ArrayList<>, la cual tiene metodos propios y esta orientada a trabajos mas complejos de arreglos del tipo object, se instancia de la siguiente manera:
+
+        ArrayList lista = new ArrayList();
+    
+    con la isntancia anterior manejara todos los tipos de objetos que le ingresemos, pero perderiamos cohecion en el tipo de arreglo que estamos trabajando, por lo tanto lo mas usado es <tipo_objeto>, el diamante se utiliza para forszar un tipo de objeto en especifico y de esta manera conservar el universo de trabajo del array que estemos utilizando, quedando de la siguiente manera:
+
+        ArrayList<Tipo_objeto> lista = new ArrayList<Tipos_objeto>();
+
 ## Almacenar referencia
