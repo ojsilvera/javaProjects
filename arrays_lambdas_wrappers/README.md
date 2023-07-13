@@ -18,3 +18,22 @@
     Accedemos al valor guardado llamando al nombre del array y la posicion que deseamos recuperar, por ejemplo:
 
         system.out.println(edades[2]);
+
+    En los arrays tambien es posible guardar objeto por ejemplo
+
+        Objeto obj = new objeto();
+
+        Nombramos un arreglo de objetos:
+
+        Objeto[] objetos = new Objeto[5];
+
+        objs[1] = obj; almacenara el obj instanciado en el inidice 1 del arreglo de objetos
+
+    es posible crear objetos directamente, lo que equivale a creacion por lotes:
+
+        Objeto[] objetos = new objeto[5];
+
+        Objeto[0] = new Objeto(arg);
+        Objeto[1] = new Objeto(arg);
+
+## Almacenar referencia
