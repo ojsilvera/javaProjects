@@ -20,5 +20,14 @@ public class App {
         // obtener el valor del elemento en la posicion 5
         System.out.println(edades[4]);
 
+        // obetenr tamalo del array
+        System.out.println(edades.length);
+
+        // recorrer el array y mostrar el valor que almacena
+        for (int i = 0; i < edades.length; i++) {
+
+            System.out.println(edades[i]);
+
+        }
     }
 }
