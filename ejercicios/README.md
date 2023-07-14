@@ -8,4 +8,10 @@ La estructura de se establece por paaquetes donde cada paquete es un ejercicio.
 
 ## Ejercicio 1
 
-- Hola mundo: Imprimir un hola mundo en la consola
+1. Hola mundo:
+
+    Imprimir un hola mundo en la consola
+
+2. Calculadora básica:
+
+    Desarrolla una calculadora básica que pueda realizar operaciones aritméticas simples como suma, resta, multiplicación y división.
