@@ -1,18 +1,17 @@
-## Getting Started
+# Ejercicios de practica en java
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Estos ejercicios son realizados para practicar conocimientos adquiridos, estan tomados del siguiente repositorio, propiedad entera de su creador, yo solo me limito a desarrollar el ejercicio desde mi propia logica de implementacion
 
-## Folder Structure
+    https://github.com/Trycatch-tv/30-dias-de-proyectos-en-java
 
-The workspace contains two folders by default, where:
+La estructura de se establece por paaquetes donde cada paquete es un ejercicio.
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+## Ejercicio 1
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+1. Hola mundo:
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+    Imprimir un hola mundo en la consola
 
-## Dependency Management
+2. Calculadora básica:
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+    Desarrolla una calculadora básica que pueda realizar operaciones aritméticas simples como suma, resta, multiplicación y división.
