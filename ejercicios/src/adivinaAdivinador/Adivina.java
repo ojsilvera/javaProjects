@@ -4,23 +4,31 @@ import java.util.Scanner;
 
 public class Adivina {
 
-    private double pInferior;
-    private double pSuperior;
+    private int pInferior;
+    private int pSuperior;
+    private int numeroInterno;
 
-    // Math.floor(Math.random() * (MAX - MIN + 1)) + MIN; genera aleatorio entre 0 y
-    // 100
-    static double numeroInterno = Math.floor(Math.random() * (100 - 0 + 1)) + 0;
-
-    public void adivinar(double miNumero) {
+    public void adivinar(int miNumero) {
 
         // evalua si es el numero
-        while (miNumero != numeroInterno) {
 
-            entregaPista(miNumero);
+        if (miNumero == numeroInterno) {
 
+            meHasPillado(numeroInterno);
+
+        } else {
+
+            entregaPista(miNumero, numeroInterno);
         }
 
-        meHasPillado(miNumero);
+    }
+
+    public void generar() {
+
+        // Math.floor(Math.random() * (MAX - MIN + 1)) + MIN; genera aleatorio entre 0 y
+        // 100
+        this.numeroInterno = (int) Math.floor(Math.random() * (100 - 0 + 1)) + 0;
+        solicitar();
 
     }
 
@@ -29,7 +37,7 @@ public class Adivina {
         // primer pedido de numero
         try (Scanner dato = new Scanner(System.in);) {
             System.out.println("Digite numero: ");
-            double miNumero = dato.nextDouble();
+            int miNumero = dato.nextInt();
             // llamamos a adivinar
             adivinar(miNumero);
         } catch (Exception e) {
@@ -39,24 +47,17 @@ public class Adivina {
 
     }
 
-    public void entregaPista(double miNumero) {
+    public void entregaPista(int miNumero, int numeroInterno) {
 
-        if (miNumero - 50 < 0) {
+        if (miNumero > numeroInterno) {
 
-            this.pInferior = 0;
-
-        } else {
-
-            this.pInferior = miNumero - 50;
-        }
-
-        if (miNumero + 50 > 100) {
-
-            this.pSuperior = 100;
+            this.pSuperior = numeroInterno;
+            this.pInferior = miNumero - numeroInterno;
 
         } else {
 
-            this.pSuperior = miNumero + 50;
+            this.pSuperior = numeroInterno - miNumero;
+            this.pInferior = numeroInterno;
         }
 
         System.out.println("El numero esta entre: " + pInferior + " y " + pSuperior);
@@ -65,7 +66,7 @@ public class Adivina {
 
     }
 
-    public void meHasPillado(double miNumero) {
+    public void meHasPillado(int miNumero) {
 
         System.out.println("el numero secreto es: " + miNumero);
 
