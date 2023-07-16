@@ -15,3 +15,7 @@ La estructura de se establece por paaquetes donde cada paquete es un ejercicio.
 2. Calculadora básica:
 
     Desarrolla una calculadora básica que pueda realizar operaciones aritméticas simples como suma, resta, multiplicación y división.
+
+3. Juego de adivinanza de números
+
+    Construye un juego en el que el programa genera un número aleatorio y el usuario tiene que adivinarlo.
