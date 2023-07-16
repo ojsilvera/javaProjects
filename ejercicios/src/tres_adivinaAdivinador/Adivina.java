@@ -1,4 +1,4 @@
-package adivinaAdivinador;
+package tres_adivinaAdivinador;
 
 import java.util.Scanner;
 

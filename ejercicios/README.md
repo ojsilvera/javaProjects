@@ -19,3 +19,7 @@ La estructura de se establece por paaquetes donde cada paquete es un ejercicio.
 3. Juego de adivinanza de números
 
     Construye un juego en el que el programa genera un número aleatorio y el usuario tiene que adivinarlo.
+
+4. Convertidor de unidades
+
+   Crea un convertidor de unidades (como centímetros, yardas, kilómetros, etc.).

@@ -1,5 +1,3 @@
-import adivinaAdivinador.Adivina;
-
 public class Ejercicio {
     public static void main(String[] args) throws Exception {
 
@@ -28,8 +26,10 @@ public class Ejercicio {
         // resultado.Calcular(dato1, dato2, operacion);
 
         // Ejercicio 3 -----------------------------------------------
-        Adivina num = new Adivina();
-        num.iniciar();
+        // Adivina num = new Adivina();
+        // num.iniciar();
+
+        // Ejercicio 4 -----------------------------------------------
 
     }
 
