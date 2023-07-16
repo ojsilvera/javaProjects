@@ -29,7 +29,7 @@ public class Ejercicio {
 
         // Ejercicio 3 -----------------------------------------------
         Adivina num = new Adivina();
-        num.generar();
+        num.iniciar();
 
     }
 

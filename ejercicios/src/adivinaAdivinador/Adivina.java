@@ -4,8 +4,6 @@ import java.util.Scanner;
 
 public class Adivina {
 
-    private int pInferior;
-    private int pSuperior;
     private int numeroInterno;
 
     public void adivinar(int miNumero) {
@@ -14,7 +12,7 @@ public class Adivina {
 
         if (miNumero == numeroInterno) {
 
-            meHasPillado(numeroInterno);
+            System.out.println("el numero magico es: " + miNumero);
 
         } else {
 
@@ -23,7 +21,7 @@ public class Adivina {
 
     }
 
-    public void generar() {
+    public void iniciar() {
 
         // Math.floor(Math.random() * (MAX - MIN + 1)) + MIN; genera aleatorio entre 0 y
         // 100
@@ -51,24 +49,14 @@ public class Adivina {
 
         if (miNumero > numeroInterno) {
 
-            this.pSuperior = numeroInterno;
-            this.pInferior = miNumero - numeroInterno;
+            System.out.println("El numero magico es menor que el digitado");
 
         } else {
 
-            this.pSuperior = numeroInterno - miNumero;
-            this.pInferior = numeroInterno;
+            System.out.println("El numero magico es mayor que el digitado");
         }
 
-        System.out.println("El numero esta entre: " + pInferior + " y " + pSuperior);
-
         solicitar();
-
-    }
-
-    public void meHasPillado(int miNumero) {
-
-        System.out.println("el numero secreto es: " + miNumero);
 
     }
 
